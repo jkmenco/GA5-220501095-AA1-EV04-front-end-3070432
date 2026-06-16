@@ -1,0 +1,327 @@
+/* === GLOBAL === */
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: red;
+}
+
+button,
+input[type="submit"],
+.loginButton,
+.registerButton,
+.serviceButton {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover,
+.loginButton:hover,
+.serviceButton:hover {
+  background-color: darkred;
+}
+
+/* === CONTAINERS === */
+.indexMainContainer,
+.loginBoxModule,
+.itemBox,
+.testimonialBox,
+.serviceRepairContent,
+.testimonialRow {
+  border: 2px solid red;
+  background-color: #000;
+}
+
+/* === INDEX === */
+.indexMainContainer {
+  overflow: hidden;
+  width: 95%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.indexMainContainer .tabs {
+  display: flex;
+  gap: 1px;
+  padding: 10px;
+}
+
+.indexMainContainer .tab-button {
+  padding: 10px 5px;
+  cursor: pointer;
+  border: 1px solid red;
+  background-color: #000;
+  color: white;
+}
+
+.indexMainContainer .tab-content {
+  padding: 20px;
+  display: none;
+}
+
+.indexMainContainer .tab-content.active {
+  display: block;
+}
+
+/* === NETWORK === */
+.networkBox {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+  margin: 1px auto;
+  width: 95%;
+}
+
+.btn {
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 50%;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp {
+  background-image: url('../asset/icon_whatsapp.svg');
+  background-color: white;
+}
+
+.facebook {
+  background-image: url('../asset/icon_facebook.svg');
+  background-color: white;
+}
+
+.twitter {
+  background-image: url('../asset/icon_twitter.svg');
+  background-color: white;
+}
+
+.phone {
+  background-image: url('../asset/icon_local_phone.png');
+  background-color: white;
+}
+
+/* === HOME === */
+.homeContentView {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+
+.leftContent {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.homeImageExample img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* === LOGIN === */
+.loginBoxModule {
+  overflow: hidden;
+  flex: 0 0 220px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  position: relative;
+  z-index: 2;
+}
+
+.loginButton {
+  display: inline-block;
+  padding: 6px 12px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 0;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+
+.registerGroup {
+  text-align: center;
+  padding: 5px;
+  font-weight: lighter;
+  font-size: smaller;
+}
+
+.registerButton {
+  background-color: red;
+  border: none;
+  text-decoration: underline;
+  color: white;
+}
+
+/* === BOTTOM === */
+.homeBottonContent {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* === ITEM BOX === */
+.itemBoxContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px;
+}
+
+.itemBox {
+  width: 100%;
+  max-width: 200px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.itemBoxTitle {
+  margin: 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+.itemBoxFlex {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.itemBoxImage {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.textExample {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: justify;
+  overflow-y: auto;
+}
+
+/* === TESTIMONIALS === */
+.testimoniesContainer {
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+.testimonialRow {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.testimonialBox {
+  flex: 0 0 calc(50% - 10px);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.testimonialIcon {
+  background-color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.testimonialText {
+  font-size: 14px;
+  color: white;
+}
+
+/* === SERVICE === */
+.serviceRepairContent {
+  display: flex;
+  flex-direction: row;
+  border-radius: 8px;
+  padding: 15px;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.servicesRepairContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.serviceImage {
+  width: 100px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.serviceInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  gap: 10px;
+}
+
+.serviceTitle {
+  font-size: 20px;
+  margin: 0;
+  text-align: center;
+}
+
+.serviceText {
+  font-size: 14px;
+  color: white;
+  text-align: center;
+}
+
+.serviceButton {
+  width: 100%;
+}

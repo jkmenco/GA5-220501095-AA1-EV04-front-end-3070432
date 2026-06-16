@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pestañas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="component/loginModule/loginBoxStyle.css">
+</head>
+<body>
+
+    <h1>titleSite</h1>
+
+
+    <div class="networkBox">
+        <button class="btn whatsapp"></button>
+        <button class="btn facebook"></button>
+        <button class="btn twitter"></button>
+        <button class="btn phone"></button>
+        <h4>999999</h4>
+    </div>
+
+
+    <div id="indexMainContainer" class="indexMainContainer">
+        <div class="tabs">
+            <div id="home" class="tab-button" onclick="openTab('tab1')">Home</div>
+            <div class="tab-button" onclick="openTab('tab2')">Services</div>
+            <div class="tab-button" onclick="openTab('tab3')">Dealerships</div>
+            <div class="tab-button" onclick="openTab('tab4')">About us</div>
+            <div class="tab-button" onclick="openTab('tab5')">Contacts</div>
+        </div>
+        <div id="tab1" class="tab-content"></div>
+        <div id="tab2" class="tab-content"></div>
+        <div id="tab3" class="tab-content"></div>
+        <div id="tab4" class="tab-content"></div>
+        <div id="tab5" class="tab-content"></div>
+    </div>
+
+    <script src="js/openTab.js"></script>
+</body>
+</html>
